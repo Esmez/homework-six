@@ -127,6 +127,15 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+@media only screen and (max-width: 800px) {
+  nav {
+    position: relative;
+    width: 100%;
+  }
+  nav .links a {
+    visibility: hidden;
+  }
+}
 nav {
   height: 90px;
   max-width: 980px;
@@ -169,10 +178,13 @@ nav .links a span {
   color: #79addc;
 }
 
-.home {
-  margin-top: 49px;
+@media only screen and (max-width: 600px) {
+  nav {
+    position: relative;
+    width: 100%;
+  }
 }
-.home .hero {
+.hero {
   height: 200px;
   width: 981px;
   display: -webkit-box;
@@ -189,10 +201,10 @@ nav .links a span {
   overflow: hidden;
   position: relative;
 }
-.home .hero img {
+.hero img {
   width: 100%;
 }
-.home .hero .overlay {
+.hero .overlay {
   height: 100%;
   width: 100%;
   top: 0;
@@ -209,17 +221,22 @@ nav .links a span {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.home .hero .container {
+.hero .container {
   height: 80px;
   max-width: 226px;
 }
-.home .hero .container h1 {
+.hero .container h1 {
   text-transform: uppercase;
   color: white;
   font-size: 60px;
   font-family: "Arial Narrow";
 }
 
+@media only screen and (max-width: 600px) {
+  .hero {
+    width: 550px;
+  }
+}
 footer {
   height: 100px;
   background-color: #79addc;
